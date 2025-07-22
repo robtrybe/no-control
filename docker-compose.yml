@@ -1,7 +1,7 @@
 services:
   db:
     env_file:
-      - ./.env
+      - ./backend/.env
     image: mysql:8.0
     container_name: no_control_db
     environment:
