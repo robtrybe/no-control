@@ -5,14 +5,13 @@ import { UserRepository } from './repositories/user.repository';
 import { PrismaService } from '../prisma/prisma.service';
 
 const CreateUserUseCaseProvider = {
-  provide: "CreateUserUseCase",
-  useClass: CreateUserUseCase
-}
+  provide: 'CreateUserUseCase',
+  useClass: CreateUserUseCase,
+};
 
 @Module({
   controllers: [UsersController],
-  providers: [UserRepository, PrismaService, CreateUserUseCaseProvider
-],
-  exports: [UserRepository, CreateUserUseCaseProvider]
+  providers: [UserRepository, PrismaService, CreateUserUseCaseProvider],
+  exports: [UserRepository, CreateUserUseCaseProvider],
 })
 export class UsersModule {}
