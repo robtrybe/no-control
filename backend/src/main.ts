@@ -19,7 +19,7 @@ async function bootstrap() {
   const config = new DocumentBuilder()
     .setTitle("Documentação No-Control")
     .addServer(`${process.env.HOST}:${process.env.PORT}`)
-    .addServer(process.env.NGROCK_URL)
+    .addServer(process.env.NGROK_URL)
     .setVersion("1.0")
     // .addBearerAuth() 
     .build()

@@ -88,9 +88,4 @@ export class UserRepository {
             }
         })
     }
-
-    return await this.prismaService.user.create({
-      data,
-    });
-  }
 }
