@@ -1,4 +1,3 @@
-export abstract class UseCase {
-    abstract execute(data: any): Promise<any>
-    
+export abstract class UseCase<TInput = any, TOutput = any> {
+    abstract execute(data?: TInput): Promise<TOutput>
 }
