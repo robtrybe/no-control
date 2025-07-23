@@ -50,7 +50,7 @@ export class UsersController {
   @ApiBadRequestResponse()
   @ApiInternalServerErrorResponse()
   async createUser(@Body() createUserDto: InputCreateUserDto): Promise<any> {
-    return await this.createUserUseCase.execute(createUserDto)
+    return await this.createUserUseCase.execute(createUserDto);
   }
 
   @Patch(':id')

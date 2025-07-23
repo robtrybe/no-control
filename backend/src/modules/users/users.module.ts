@@ -9,9 +9,9 @@ import { GetOneUserUseCase } from './usecase/get-one-user.usecase';
 import { DeleteUserUseCase } from './usecase/delete-user.usecase';
 
 const CreateUserUseCaseProvider = {
-  provide: "CreateUserUseCase",
-  useClass: CreateUserUseCase
-}
+  provide: 'CreateUserUseCase',
+  useClass: CreateUserUseCase,
+};
 
 
 const UpdateUserUseCaseProvider = {

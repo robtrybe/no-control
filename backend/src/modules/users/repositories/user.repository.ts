@@ -1,4 +1,3 @@
-
 import { InputCreateUserDto } from "../dto/input/input-create-user.dto";
 import { User } from "@prisma/client";
 import { ConflictException, Injectable, NotFoundException } from "@nestjs/common";
@@ -88,7 +87,10 @@ export class UserRepository {
                 id
             }
         })
-
     }
 
+    return await this.prismaService.user.create({
+      data,
+    });
+  }
 }
