@@ -19,4 +19,5 @@ export class CreateUserUseCase extends UseCase {
             lastName: user.lastName
         } as OutputCreateUserDto
     }
+    
 }
